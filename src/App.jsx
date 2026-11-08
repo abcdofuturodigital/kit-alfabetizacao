@@ -7,17 +7,6 @@ function BuyButton({ children = 'QUERO MEU KIT' }) {
   return <a className="buy-button" href={checkoutUrl} target="_blank" rel="noreferrer">{children}<span aria-hidden="true"> →</span></a>;
 }
 
-function Book({ label, title, color, detail }) {
-  return (
-    <div className={`book book-${color}`}>
-      <div className="book-brand">ABC DO FUTURO DIGITAL</div>
-      <div className="book-art" aria-hidden="true">{detail}</div>
-      <div className="book-title">{title}</div>
-      <div className="book-label">{label}</div>
-    </div>
-  );
-}
-
 function App() {
   return (
     <main>
@@ -36,10 +25,10 @@ function App() {
         <div className="hero-visual" aria-label="Apresentação ilustrativa dos três cadernos do Kit Alfabetização">
           <div className="spark spark-one">✦</div>
           <div className="spark spark-two">✳</div>
-          <div className="book-stack">
-            <Book label="CADERNO" title="SÍLABAS SIMPLES" color="blue" detail="BA BE BI BO BU" />
-            <Book label="CADERNO" title="DAS VOGAIS" color="coral" detail="A E I O U" />
-            <Book label="ATIVIDADES" title="COORDENAÇÃO MOTORA" color="mint" detail="✎ ✿ ◯" />
+          <div className="hero-book-stack">
+            <img className="hero-cover hero-cover-silabas" src={`${import.meta.env.BASE_URL}capas/caderno-silabas-simples.svg`} alt="Capa real do Caderno de Sílabas Simples" />
+            <img className="hero-cover hero-cover-vogais" src={`${import.meta.env.BASE_URL}capas/caderno-das-vogais.svg`} alt="Capa real do Caderno das Vogais" />
+            <img className="hero-cover hero-cover-coordenacao" src={`${import.meta.env.BASE_URL}capas/caderno-coordenacao-motora.svg`} alt="Capa real do Caderno de Coordenação Motora" />
           </div>
           <div className="bonus-sticker">BÔNUS<br/><strong>INCLUSO!</strong></div>
         </div>
