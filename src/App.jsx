@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { previewPages } from './previewPages';
 
 const checkoutUrl = 'https://pay.hotmart.com/G108080766B?checkoutMode=10&bid=1792293294853';
@@ -19,9 +19,20 @@ function Book({ label, title, color, detail }) {
 }
 
 function App() {
+  const [secondsLeft, setSecondsLeft] = useState(15 * 60);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setSecondsLeft((seconds) => Math.max(0, seconds - 1));
+    }, 1000);
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const timerDisplay = `${String(Math.floor(secondsLeft / 60)).padStart(2, '0')}:${String(secondsLeft % 60).padStart(2, '0')}`;
+
   return (
     <main>
-      <div className="topbar">✦ ACESSO IMEDIATO! APROVEITE ESTA CONDIÇÃO ESPECIAL!</div>
+      <div className="topbar"><span>✦ ACESSO IMEDIATO! APROVEITE ESTA CONDIÇÃO ESPECIAL!</span><span className="visit-timer" aria-live="off">TEMPO DE VISITA <strong>{timerDisplay}</strong></span></div>
 
       <header className="hero section-wrap">
         <div className="hero-copy">
