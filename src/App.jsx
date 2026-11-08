@@ -28,7 +28,7 @@ function App() {
           <h1>Kit completo com <em>+150 atividades</em> de alfabetização</h1>
           <p className="hero-subtitle">Um material completo para tornar a alfabetização mais prática, organizada e divertida, em casa ou na sala de aula.</p>
           <div className="hero-points">
-            <span>✓ 3 cadernos com atividades de vogais, sílabas e coordenação motora.</span>
+            <span>✓ Estímulo à consciência fonológica, reconhecimento das vogais, construção de sílabas, desenvolvimento da leitura e aprimoramento da coordenação motora.</span>
             <span>✓ Bônus: Livro de Colorir — Animais da Fazenda</span>
             <span>✓ Arquivos digitais prontos para consultar e imprimir.</span>
           </div>
