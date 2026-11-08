@@ -21,13 +21,15 @@ function App() {
             <span>✓ Atividades de vogais, sílabas simples e coordenação motora.</span>
             <span>✓ Um material organizado para apoiar diferentes etapas da aprendizagem.</span>
           </div>
-          <BuyButton />
-          <small className="secure-note">Pagamento pela Hotmart • Produto digital</small>
         </div>
         <div className="hero-mix" aria-label="Prévia de páginas reais dos três cadernos">
           <img className="mix-page mix-silabas" src={previewPages.silabas} alt="Atividade real de sílabas simples."/>
           <img className="mix-page mix-vogais" src={previewPages.vogais} alt="Atividade real com vogais."/>
           <img className="mix-page mix-coordenacao" src={previewPages.coordenacao} alt="Atividade real de coordenação motora."/>
+        </div>
+        <div className="hero-cta">
+          <BuyButton />
+          <small className="secure-note">Pagamento pela Hotmart • Produto digital</small>
         </div>
       </header>
 
