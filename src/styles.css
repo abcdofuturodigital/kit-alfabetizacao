@@ -63,5 +63,23 @@
 
 
 /* Hero sem banner de capas: conteúdo centralizado em uma coluna */
-.hero{grid-template-columns:minmax(0,760px);justify-content:center;min-height:0;padding-top:64px;padding-bottom:64px}
+.hero{grid-template-columns:minmax(0,1.03fr) minmax(0,.97fr);justify-content:center;align-items:center;gap:34px;min-height:0;padding-top:58px;padding-bottom:58px}
 .hero-copy{width:100%}
+.hero-mix{position:relative;isolation:isolate;width:100%;max-width:570px;height:410px;margin:0 auto}
+.hero-mix:before{content:"";position:absolute;inset:7% 3%;z-index:-1;border-radius:36px;background:radial-gradient(circle at 18% 24%,#d8eee2 0 22%,transparent 23%),radial-gradient(circle at 83% 76%,#f7dfd5 0 26%,transparent 27%),#f7f0e4}
+.mix-page{position:absolute;display:block;width:min(37%,205px);height:auto;aspect-ratio:210/329;object-fit:cover;background:#fff;border:7px solid #fff;border-radius:5px;box-shadow:0 15px 30px #173e4430}
+.mix-silabas{left:0;top:24%;transform:rotate(-10deg);z-index:1}
+.mix-vogais{left:31%;top:3%;transform:rotate(1.5deg);z-index:3}
+.mix-coordenacao{left:63%;top:24%;transform:rotate(10deg);z-index:2}
+@media(max-width:800px){
+ .hero{grid-template-columns:1fr;gap:24px;padding-top:50px;padding-bottom:48px}
+ .hero-mix{width:min(100%,540px);height:380px}
+ .mix-page{width:min(36%,190px)}
+}
+@media(max-width:480px){
+ .hero-mix{height:285px}
+ .mix-page{width:min(38%,135px);border-width:5px}
+ .mix-silabas{top:23%}
+ .mix-vogais{left:31%;top:3%}
+ .mix-coordenacao{left:63%;top:23%}
+}
