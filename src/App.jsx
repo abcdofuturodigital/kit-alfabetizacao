@@ -1,4 +1,5 @@
 import React from 'react';
+import { previewPages } from './previewPages';
 
 const checkoutUrl = 'https://pay.hotmart.com/G108080766B?checkoutMode=10&bid=1792293294853';
 
@@ -80,6 +81,19 @@ function App() {
         </div>
       </section>
 
+      <section className="section-wrap preview-section">
+        <div className="section-heading">
+          <span className="eyebrow">VEJA POR DENTRO</span>
+          <h2>Páginas reais dos materiais</h2>
+          <p>Estas são amostras retiradas dos próprios cadernos que você vai receber no kit.</p>
+        </div>
+        <div className="preview-grid">
+          <figure className="preview-card"><img src={previewPages.silabas} alt="Página real do Caderno de Sílabas Simples, com atividade da família do B."/><figcaption><strong>Caderno de Sílabas Simples</strong><span>Atividade de formação e treino de sílabas</span></figcaption></figure>
+          <figure className="preview-card"><img src={previewPages.vogais} alt="Página real do Caderno das Vogais, com atividades ilustradas para reconhecer A, E, I, O e U."/><figcaption><strong>Caderno das Vogais</strong><span>Reconhecimento das vogais e associação com figuras</span></figcaption></figure>
+          <figure className="preview-card"><img src={previewPages.coordenacao} alt="Página real do Caderno de Coordenação Motora, com traçados pontilhados."/><figcaption><strong>Caderno de Coordenação Motora</strong><span>Traçados para praticar o controle do lápis</span></figcaption></figure>
+        </div>
+      </section>
+
       <section className="bonus-section">
         <div className="section-wrap bonus-inner">
           <div className="bonus-copy">
@@ -137,7 +151,7 @@ function App() {
         </div>
       </section>
 
-      <footer><strong>ABC DO FUTURO DIGITAL</strong><span>Materiais pedagógicos digitais.</span><small>Produto digital. As imagens ilustrativas dos materiais serão substituídas pelas páginas reais.</small></footer>
+      <footer><strong>ABC DO FUTURO DIGITAL</strong><span>Materiais pedagógicos digitais.</span><small>Produto digital. Mockups de apresentação ilustrativos. As páginas de atividades exibidas são amostras reais dos três cadernos.</small></footer>
     </main>
   );
 }
