@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#39c8f1"/><stop offset="1" stop-color="#d9f7ff"/></linearGradient>
+ <linearGradient id="desk" x2="0" y2="1"><stop stop-color="#ffc66b"/><stop offset="1" stop-color="#e98b35"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="12"/><feOffset dy="10"/><feComponentTransfer><feFuncA type="linear" slope=".22"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1200" height="1600" fill="url(#sky)"/>
+<circle cx="110" cy="160" r="48" fill="#fff" opacity=".65"/><circle cx="1080" cy="210" r="62" fill="#fff" opacity=".55"/>
+<path d="M0 830 Q180 740 360 830 T720 820 T1200 820 V1600 H0Z" fill="#80d85d"/>
+<path d="M0 1060 Q240 990 480 1060 T960 1050 T1200 1040 V1600 H0Z" fill="#4dbb45"/>
+<rect x="0" y="1070" width="1200" height="530" fill="url(#desk)"/>
+<path d="M0 1120 Q300 1080 600 1120 T1200 1120" fill="none" stroke="#cb752c" stroke-width="12" opacity=".5"/>
+<g filter="url(#shadow)">
+ <rect x="65" y="60" width="1070" height="480" rx="110" fill="#fff" stroke="#0877c7" stroke-width="15"/>
+ <path d="M100 115 Q600 30 1100 115" fill="none" stroke="#48c5f5" stroke-width="8" stroke-dasharray="24 20"/>
+ <text x="600" y="235" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="92" font-weight="900" fill="#153b80">Caderno das</text>
+ <text x="600" y="420" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="205" font-weight="900" letter-spacing="-8" fill="#ef3c37" stroke="#152b55" stroke-width="10" paint-order="stroke">VOGAIS</text>
+</g>
+<g filter="url(#shadow)">
+ <!-- children -->
+ <circle cx="330" cy="750" r="175" fill="#f7b47f" stroke="#713c26" stroke-width="18"/>
+ <path d="M165 720 Q130 500 330 500 Q510 500 495 700 Q420 595 300 620 Q230 620 165 720" fill="#6a351e" stroke="#40251d" stroke-width="18"/>
+ <circle cx="275" cy="760" r="23" fill="#39251e"/><circle cx="390" cy="760" r="23" fill="#39251e"/>
+ <path d="M285 835 Q340 890 405 830" fill="none" stroke="#9e3030" stroke-width="18" stroke-linecap="round"/>
+ <path d="M160 1030 Q175 900 330 900 Q485 900 505 1030 L520 1110 H135Z" fill="#208de1" stroke="#15508e" stroke-width="18"/>
+ <circle cx="850" cy="760" r="175" fill="#f7b47f" stroke="#713c26" stroke-width="18"/>
+ <path d="M680 730 Q640 510 850 510 Q1045 510 1020 740 Q940 620 820 625 Q735 635 680 730" fill="#713b24" stroke="#40251d" stroke-width="18"/>
+ <path d="M980 570 Q1100 550 1080 690 Q1020 660 980 620" fill="#ef4b91" stroke="#a6225c" stroke-width="14"/>
+ <circle cx="795" cy="760" r="23" fill="#39251e"/><circle cx="910" cy="760" r="23" fill="#39251e"/>
+ <path d="M800 835 Q855 890 920 830" fill="none" stroke="#9e3030" stroke-width="18" stroke-linecap="round"/>
+ <path d="M680 1030 Q695 900 850 900 Q1005 900 1020 1030 L1035 1110 H655Z" fill="#f45a9b" stroke="#a52e6b" stroke-width="18"/>
+</g>
+<!-- vowels -->
+<g font-family="Trebuchet MS,Arial,sans-serif" font-size="190" font-weight="900" text-anchor="middle" filter="url(#shadow)" stroke="#173b68" stroke-width="12" paint-order="stroke">
+ <text x="600" y="1020" fill="#ff3838">A</text>
+ <text x="180" y="1260" fill="#63c92e">E</text>
+ <text x="390" y="1260" fill="#168ee8">I</text>
+ <text x="650" y="1260" fill="#a64be8">O</text>
+ <text x="970" y="1260" fill="#ff9b22">U</text>
+</g>
+<path d="M70 1320 Q600 1250 1130 1320 L1090 1510 Q600 1560 110 1510Z" fill="#fff" stroke="#f5bd28" stroke-width="14" filter="url(#shadow)"/>
+<text x="600" y="1395" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="48" font-weight="900" fill="#153b80">Propostas para identificar,</text>
+<text x="600" y="1460" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="48" font-weight="900" fill="#153b80">traçar e aprender as vogais.</text>
+<text x="600" y="1550" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#174c55">ABC DO FUTURO DIGITAL</text>
+</svg>
