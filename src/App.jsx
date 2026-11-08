@@ -90,7 +90,7 @@ function App() {
             <p>Propostas para identificar, traçar e aprender as vogais.</p>
           </article>
           <article className="product-card">
-            <div className="product-icon icon-mint">✎</div>
+            <img className="product-cover" src={`${import.meta.env.BASE_URL}capas/caderno-coordenacao-motora.svg`} alt="Capa do Caderno de Coordenação Motora, com atividades de traçado pontilhado e formas para praticar."/>
             <h3>Caderno de Coordenação Motora</h3>
             <p>50 páginas de atividades para desenvolver o controle dos movimentos e o traçado.</p>
           </article>
