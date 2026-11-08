@@ -32,7 +32,7 @@ function App() {
 
   return (
     <main>
-      <div className="topbar"><span>✦ ACESSO IMEDIATO! APROVEITE ESTA CONDIÇÃO ESPECIAL!</span><span className="visit-timer" aria-live="off"><strong>{timerDisplay}</strong></span></div>
+      <div className="topbar"><span>ACESSO IMEDIATO! APROVEITE ESTA CONDIÇÃO ESPECIAL!</span><span className="visit-timer" aria-live="off"><strong>{timerDisplay}</strong></span></div>
 
       <header className="hero section-wrap">
         <div className="hero-copy">
