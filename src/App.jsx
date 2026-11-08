@@ -80,7 +80,7 @@ function App() {
         </div>
         <div className="product-grid">
           <article className="product-card">
-            <div className="product-icon icon-blue">ABC</div>
+            <img className="product-cover" src={`${import.meta.env.BASE_URL}capas/caderno-silabas-simples.svg`} alt="Capa do Caderno de Sílabas Simples, com as sílabas BA, BE, BI, BO e BU."/>
             <h3>Caderno de Sílabas Simples</h3>
             <p>Atividades para reconhecer, formar e praticar sílabas simples.</p>
           </article>
