@@ -26,8 +26,8 @@ function App() {
       <header className="hero section-wrap">
         <div className="hero-copy">
           <span className="eyebrow">PARA PAIS E PROFESSORES</span>
-          <h1>Aprender a ler e escrever pode ser mais <em>leve e divertido!</em></h1>
-          <p className="hero-subtitle">Um kit de atividades práticas para apoiar a alfabetização, estimular habilidades e tornar cada aprendizagem mais especial.</p>
+          <h1>Pouco tempo para preparar atividades de alfabetização? Tenha tudo mais <em>prático e organizado!</em></h1>
+          <p className="hero-subtitle">Reúna atividades de vogais, sílabas simples e coordenação motora em um só kit digital, pronto para consultar e imprimir.</p>
           <div className="hero-points">
             <span>✓ Atividades prontas para usar</span>
             <span>✓ Arquivos digitais</span>
