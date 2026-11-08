@@ -88,11 +88,12 @@ function App() {
           <span className="eyebrow">CONHEÇA O CONTEÚDO</span>
           <h2>Veja algumas páginas reais</h2>
         </div>
-        <div className="preview-grid">
-          <figure className="preview-card"><img src={previewPages.silabas} alt="Página do Caderno de Sílabas Simples."/><figcaption><strong>Sílabas Simples</strong></figcaption></figure>
-          <figure className="preview-card"><img src={previewPages.vogais} alt="Página do Caderno das Vogais."/><figcaption><strong>Vogais</strong></figcaption></figure>
-          <figure className="preview-card"><img src={previewPages.coordenacao} alt="Página do Caderno de Coordenação Motora."/><figcaption><strong>Coordenação Motora</strong></figcaption></figure>
+        <div className="preview-carousel" aria-label="Páginas reais dos cadernos. Deslize para o lado para visualizar.">
+          <figure className="preview-card"><img src={previewPages.silabas} alt="Página real do Caderno de Sílabas Simples."/><figcaption><strong>Sílabas Simples</strong></figcaption></figure>
+          <figure className="preview-card"><img src={previewPages.vogais} alt="Página real do Caderno das Vogais."/><figcaption><strong>Caderno das Vogais</strong></figcaption></figure>
+          <figure className="preview-card"><img src={previewPages.coordenacao} alt="Página real do Caderno de Coordenação Motora."/><figcaption><strong>Coordenação Motora</strong></figcaption></figure>
         </div>
+        <p className="preview-hint">← Deslize para o lado e conheça as atividades →</p>
       </section>
 
       <section className="bonus-section">
