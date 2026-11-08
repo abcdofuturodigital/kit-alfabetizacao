@@ -85,7 +85,7 @@ function App() {
             <p>Atividades para reconhecer, formar e praticar sílabas simples.</p>
           </article>
           <article className="product-card">
-            <div className="product-icon icon-coral">A E I</div>
+            <img className="product-cover" src={`${import.meta.env.BASE_URL}capas/caderno-das-vogais.svg`} alt="Capa do Caderno das Vogais, com as letras A, E, I, O e U em destaque."/>
             <h3>Caderno das Vogais</h3>
             <p>Propostas para identificar, traçar e aprender as vogais.</p>
           </article>
