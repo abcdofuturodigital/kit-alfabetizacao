@@ -83,3 +83,25 @@
  .mix-vogais{left:31%;top:3%}
  .mix-coordenacao{left:63%;top:23%}
 }
+
+
+/* Hero em sequência: mensagem, páginas reais e botão de compra abaixo do banner */
+.hero{grid-template-columns:minmax(0,1fr);justify-items:center;gap:20px;max-width:900px;min-height:0;padding-top:58px;padding-bottom:64px}
+.hero-copy{width:100%;max-width:760px;text-align:center}
+.hero-copy .hero-points{max-width:620px;margin-left:auto;margin-right:auto;text-align:left}
+.hero-mix{width:min(100%,650px);height:410px;margin:0 auto}
+.hero-cta{display:flex;flex-direction:column;align-items:center;gap:0;width:min(100%,390px);margin:0 auto}
+.hero-cta .buy-button{width:100%;min-width:0}
+.hero-cta .secure-note{text-align:center;margin:16px auto 0}
+@media(max-width:800px){
+ .hero{grid-template-columns:minmax(0,1fr);gap:18px;padding-top:48px;padding-bottom:52px}
+ .hero-copy{ text-align:center }
+ .hero-copy .hero-points{margin-left:auto;margin-right:auto;text-align:left}
+ .hero-mix{width:min(100%,540px);height:360px}
+ .hero-cta{width:min(100%,390px)}
+}
+@media(max-width:480px){
+ .hero{gap:14px;padding-top:40px;padding-bottom:46px}
+ .hero-mix{height:285px}
+ .hero-cta{width:100%}
+}
