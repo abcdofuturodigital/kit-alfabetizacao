@@ -14,10 +14,12 @@ function App() {
 
       <header className="hero section-wrap">
         <div className="hero-copy">
-          <h1>Kit completo com <em>+150 atividades</em> de alfabetização</h1>
+          <span className="eyebrow">PARA PROFESSORES E FAMÍLIAS</span>
+          <h1>Mais praticidade para trabalhar a <em>alfabetização</em></h1>
+          <p className="hero-subtitle">Precisa de atividades variadas sem gastar tanto tempo preparando tudo? Tenha mais de 150 atividades em um kit digital com 3 cadernos prontos para imprimir e aplicar.</p>
           <div className="hero-points">
-            <span>✓ Estímulo à consciência fonológica, reconhecimento das vogais, construção de sílabas, desenvolvimento da leitura e aprimoramento da coordenação motora.</span>
-            <span>✓ Materiais digitais prontos para imprimir e aplicar.</span>
+            <span>✓ Atividades de vogais, sílabas simples e coordenação motora.</span>
+            <span>✓ Um material organizado para apoiar diferentes etapas da aprendizagem.</span>
           </div>
           <BuyButton />
           <small className="secure-note">Pagamento pela Hotmart • Produto digital</small>
@@ -37,24 +39,38 @@ function App() {
       <section className="section-wrap content-section">
         <div className="section-heading">
           <span className="eyebrow">TUDO EM UM SÓ KIT</span>
-          <h2>Você recebe 3 cadernos digitais</h2>
+          <h2>Os 3 cadernos que compõem o kit</h2>
+          <p>Conteúdos diferentes, reunidos em um só material para facilitar sua rotina.</p>
         </div>
         <div className="product-grid">
           <article className="product-card">
             <img className="product-cover" src={`${import.meta.env.BASE_URL}capas/caderno-silabas-simples.svg`} alt="Capa do Caderno de Sílabas Simples."/>
             <h3>Caderno de Sílabas Simples</h3>
-            <p>Atividades para formar e praticar sílabas.</p>
+            <p>Exercícios para reconhecer, combinar e praticar sílabas simples.</p>
           </article>
           <article className="product-card">
             <img className="product-cover" src={`${import.meta.env.BASE_URL}capas/caderno-das-vogais.svg`} alt="Capa do Caderno das Vogais."/>
             <h3>Caderno das Vogais</h3>
-            <p>Atividades para identificar e traçar as vogais.</p>
+            <p>Propostas para identificar, reconhecer e praticar o traçado das vogais.</p>
           </article>
           <article className="product-card">
             <img className="product-cover" src={`${import.meta.env.BASE_URL}capas/caderno-coordenacao-motora.svg`} alt="Capa do Caderno de Coordenação Motora."/>
             <h3>Caderno de Coordenação Motora</h3>
-            <p>50 páginas para praticar movimentos e traçados.</p>
+            <p>50 páginas de exercícios para desenvolver movimentos, controle do traçado e coordenação motora.</p>
           </article>
+        </div>
+      </section>
+
+      <section className="section-wrap benefits-section">
+        <div className="section-heading">
+          <span className="eyebrow">MAIS PRATICIDADE NA ROTINA</span>
+          <h2>Menos tempo preparando. Mais tempo ensinando.</h2>
+          <p>Um conjunto de atividades para apoiar o trabalho com habilidades importantes da alfabetização.</p>
+        </div>
+        <div className="benefit-grid">
+          <div><span>01</span><h3>Material organizado</h3><p>Três cadernos com propostas diferentes reunidos em um único kit digital.</p></div>
+          <div><span>02</span><h3>Pronto para imprimir</h3><p>Tenha as atividades disponíveis para preparar suas propostas de aprendizagem.</p></div>
+          <div><span>03</span><h3>Conteúdos complementares</h3><p>Vogais, sílabas simples e coordenação motora em uma só compra.</p></div>
         </div>
       </section>
 
@@ -76,7 +92,7 @@ function App() {
           <div className="bonus-copy">
             <span className="eyebrow">BÔNUS INCLUSO</span>
             <h2>Livro de Colorir — Animais da Fazenda</h2>
-            <p>Mais diversão e criatividade para completar o kit.</p>
+            <p>Você também recebe um livro digital para colorir com animais da fazenda, como material bônus.</p>
           </div>
           <div className="bonus-book">
             <div className="farm-illustration" aria-hidden="true">🐮 🐷 🐔</div>
@@ -89,14 +105,15 @@ function App() {
       <section className="offer-section">
         <div className="section-wrap offer-card">
           <span className="eyebrow">OFERTA ESPECIAL</span>
-          <h2>Leve os 3 cadernos + o bônus</h2>
+          <h2>Receba o kit completo por um único preço</h2>
+          <p className="offer-description">São 3 cadernos digitais com mais de 150 atividades, mais o Livro de Colorir — Animais da Fazenda como bônus.</p>
           <div className="price-compare">
             <span>Separadamente: <s>R$ 49,70</s></span>
             <div className="price">R$ 34,90</div>
             <strong className="saving">Economize R$ 14,80</strong>
           </div>
-          <BuyButton>QUERO APROVEITAR A OFERTA</BuyButton>
-          <small>Pagamento único • Compra pela Hotmart</small>
+          <BuyButton>QUERO MEU KIT ALFABETIZAÇÃO</BuyButton>
+          <small>Pagamento único • Compra segura pela Hotmart • Acesso digital após a confirmação</small>
         </div>
       </section>
 
