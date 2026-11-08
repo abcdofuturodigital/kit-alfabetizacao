@@ -24,16 +24,6 @@ function App() {
           <BuyButton />
           <small className="secure-note">Pagamento pela Hotmart • Produto digital</small>
         </div>
-        <div className="hero-visual" aria-label="Apresentação ilustrativa dos três cadernos do Kit Alfabetização">
-          <div className="spark spark-one">✦</div>
-          <div className="spark spark-two">✳</div>
-          <div className="hero-book-stack">
-            <img className="hero-cover hero-cover-silabas" src={`${import.meta.env.BASE_URL}capas/caderno-silabas-simples.svg`} alt="Capa real do Caderno de Sílabas Simples" />
-            <img className="hero-cover hero-cover-vogais" src={`${import.meta.env.BASE_URL}capas/caderno-das-vogais.svg`} alt="Capa real do Caderno das Vogais" />
-            <img className="hero-cover hero-cover-coordenacao" src={`${import.meta.env.BASE_URL}capas/caderno-coordenacao-motora.svg`} alt="Capa real do Caderno de Coordenação Motora" />
-          </div>
-          <div className="bonus-sticker">BÔNUS<br/><strong>INCLUSO!</strong></div>
-        </div>
       </header>
 
       <section className="section-wrap content-section">
