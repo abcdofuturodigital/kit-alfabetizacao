@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { previewPages } from './previewPages';
 
 const checkoutUrl = 'https://pay.hotmart.com/G108080766B?checkoutMode=10&bid=1792293294853';
@@ -19,30 +19,19 @@ function Book({ label, title, color, detail }) {
 }
 
 function App() {
-  const [secondsLeft, setSecondsLeft] = useState(15 * 60);
-
-  useEffect(() => {
-    const timer = window.setInterval(() => {
-      setSecondsLeft((seconds) => Math.max(0, seconds - 1));
-    }, 1000);
-    return () => window.clearInterval(timer);
-  }, []);
-
-  const timerDisplay = `${String(Math.floor(secondsLeft / 60)).padStart(2, '0')}:${String(secondsLeft % 60).padStart(2, '0')}`;
-
   return (
     <main>
-      <div className="topbar"><span>ACESSO IMEDIATO! APROVEITE ESTA CONDIÇÃO ESPECIAL!</span><span className="visit-timer" aria-live="off"><strong>{timerDisplay}</strong></span></div>
+      <div className="topbar"><span>ACESSO IMEDIATO! APROVEITE ESTA CONDIÇÃO ESPECIAL!</span></div>
 
       <header className="hero section-wrap">
         <div className="hero-copy">
           <span className="eyebrow">PARA PAIS E PROFESSORES</span>
-          <h1>Falta tempo para preparar atividades? Tenha a alfabetização mais <em>prática e organizada!</em></h1>
-          <p className="hero-subtitle">Três cadernos pedagógicos em um só kit digital, com atividades de vogais, sílabas simples e coordenação motora.</p>
+          <h1>Kit completo com <em>+150 atividades</em> de alfabetização</h1>
+          <p className="hero-subtitle">Tenha em um só lugar atividades prontas para trabalhar vogais, sílabas simples e coordenação motora. Mais praticidade para planejar e acompanhar a aprendizagem das crianças.</p>
           <div className="hero-points">
-            <span>✓ Pronto para consultar e imprimir</span>
-            <span>✓ Bônus: Livro de Colorir</span>
-            <span>✓ Acesso digital</span>
+            <span>✓ 3 cadernos pedagógicos digitais</span>
+            <span>✓ Bônus: Livro de Colorir — Animais da Fazenda</span>
+            <span>✓ Material para consultar e imprimir</span>
           </div>
           <BuyButton />
           <small className="secure-note">Pagamento pela Hotmart • Produto digital</small>
