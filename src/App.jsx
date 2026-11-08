@@ -25,13 +25,12 @@ function App() {
 
       <header className="hero section-wrap">
         <div className="hero-copy">
-          <span className="eyebrow">PARA PAIS E PROFESSORES</span>
           <h1>Kit completo com <em>+150 atividades</em> de alfabetização</h1>
-          <p className="hero-subtitle">Tenha em um só lugar atividades prontas para trabalhar vogais, sílabas simples e coordenação motora. Mais praticidade para planejar e acompanhar a aprendizagem das crianças.</p>
+          <p className="hero-subtitle">Um material completo para tornar a alfabetização mais prática, organizada e divertida, em casa ou na sala de aula.</p>
           <div className="hero-points">
-            <span>✓ 3 cadernos pedagógicos digitais</span>
+            <span>✓ 3 cadernos com atividades de vogais, sílabas e coordenação motora.</span>
             <span>✓ Bônus: Livro de Colorir — Animais da Fazenda</span>
-            <span>✓ Material para consultar e imprimir</span>
+            <span>✓ Arquivos digitais prontos para consultar e imprimir.</span>
           </div>
           <BuyButton />
           <small className="secure-note">Pagamento pela Hotmart • Produto digital</small>
