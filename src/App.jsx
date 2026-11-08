@@ -56,6 +56,22 @@ function App() {
         </div>
       </section>
 
+      <section className="pain-section">
+        <div className="section-wrap pain-inner">
+          <div className="section-heading">
+            <span className="eyebrow">A GENTE ENTENDE SUA ROTINA</span>
+            <h2>Encontrar atividades variadas e preparar tudo pode tomar muito tempo.</h2>
+            <p>Entre a rotina da escola, da casa e tantas tarefas, nem sempre é fácil ter propostas organizadas à mão para cada momento de aprendizagem.</p>
+          </div>
+          <div className="pain-grid">
+            <div><span>⌛</span><strong>Pouco tempo para preparar atividades</strong><p>Você precisa de praticidade para organizar a rotina.</p></div>
+            <div><span>📚</span><strong>Dificuldade para reunir materiais</strong><p>É melhor ter diferentes propostas em um só kit.</p></div>
+            <div><span>🌱</span><strong>A criança precisa praticar</strong><p>Vogais, sílabas e coordenação motora pedem oportunidades de treino.</p></div>
+          </div>
+          <div className="solution-note"><strong>A solução:</strong> um kit digital com três cadernos pedagógicos e um bônus para apoiar suas atividades de alfabetização, com arquivos prontos para consultar e imprimir.</div>
+        </div>
+      </section>
+
       <section className="section-wrap content-section">
         <div className="section-heading">
           <span className="eyebrow">SEU KIT COMPLETO</span>
