@@ -26,10 +26,8 @@ function App() {
       <header className="hero section-wrap">
         <div className="hero-copy">
           <h1>Kit completo com <em>+150 atividades</em> de alfabetização</h1>
-          <p className="hero-subtitle">Um material completo para tornar a alfabetização mais prática, organizada e divertida, em casa ou na sala de aula.</p>
           <div className="hero-points">
             <span>✓ Estímulo à consciência fonológica, reconhecimento das vogais, construção de sílabas, desenvolvimento da leitura e aprimoramento da coordenação motora.</span>
-            <span>✓ Bônus: Livro de Colorir — Animais da Fazenda.</span>
             <span>✓ Materiais digitais prontos para imprimir e aplicar.</span>
           </div>
           <BuyButton />
