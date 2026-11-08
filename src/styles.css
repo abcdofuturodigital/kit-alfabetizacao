@@ -36,3 +36,27 @@
   .hero-cover+.hero-cover{margin-left:-11px}
   .product-cover{width:min(100%,135px)}
 }
+
+
+/* Ajustes de conversão e alinhamento dos CTAs */
+.hero-copy .buy-button{margin:2px auto 0;min-width:260px}
+.hero-copy .secure-note{text-align:center;max-width:340px}
+.offer-card{display:flex;flex-direction:column;align-items:center}
+.offer-card .offer-description{max-width:540px;color:var(--muted);line-height:1.65;margin:0 auto 18px}
+.offer-card .buy-button{width:min(100%,390px);margin:0 auto}
+.offer-card>small{text-align:center;line-height:1.6}
+.hero-copy .hero-points{max-width:560px}
+.hero-copy .hero-points span{line-height:1.6}
+.product-card{text-align:center}
+.product-card h3{line-height:1.2}
+@media(max-width:800px){
+ .hero-copy{text-align:center}
+ .hero-copy .hero-points{text-align:left;margin-left:auto;margin-right:auto}
+ .hero-copy .buy-button{width:min(100%,390px)}
+ .hero-copy .secure-note{margin-left:auto;margin-right:auto}
+ .offer-card .buy-button{width:100%;max-width:390px}
+}
+@media(max-width:480px){
+ .hero-copy .buy-button,.offer-card .buy-button{width:100%;min-width:0}
+ .hero-copy .hero-points{font-size:13px}
+}
