@@ -183,15 +183,6 @@ function App() {
         </div>
       </section>
 
-      <section className="final-cta">
-        <div className="section-wrap">
-          <span className="eyebrow">DÊ MAIS RECURSOS À SUA ROTINA</span>
-          <h2>Tenha o Kit Alfabetização completo!</h2>
-          <p>Três cadernos digitais e um livro de colorir bônus em uma única compra.</p>
-          <BuyButton>QUERO GARANTIR MEU KIT</BuyButton>
-          <small>Compra segura pela Hotmart</small>
-        </div>
-      </section>
 
       <footer><strong>ABC DO FUTURO DIGITAL</strong><span>Materiais pedagógicos digitais.</span></footer>
     </main>
