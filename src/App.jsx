@@ -40,8 +40,8 @@ function App() {
       <header className="hero section-wrap">
         <div className="hero-copy">
           <span className="eyebrow">PARA PROFESSORES, PAIS E REFORÇO ESCOLAR</span>
-          <h1>Prepare atividades com mais facilidade. <em>Apoie cada etapa da alfabetização.</em></h1>
-          <p className="hero-subtitle">Chega de perder tempo procurando atividades em diferentes lugares! Tenha em um só kit digital propostas de vogais, sílabas simples e coordenação motora. É só imprimir e aplicar!</p>
+          <h1>Mais praticidade para alfabetizar. <em>Tudo em um só kit.</em></h1>
+          <p className="hero-subtitle">Vogais, sílabas simples e coordenação motora. É só imprimir e aplicar!</p>
           <div className="hero-tags">
             <span>3 cadernos digitais</span>
             <span>+150 atividades</span>
