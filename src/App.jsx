@@ -69,7 +69,7 @@ function App() {
       <section className="section-wrap products-section">
         <div className="section-heading">
           <span className="eyebrow">CONHEÇA O QUE VOCÊ VAI RECEBER</span>
-          <h2>3 cadernos. Diferentes habilidades para trabalhar.</h2>
+          <h2>3 cadernos para desenvolver diferentes habilidades.</h2>
           <p>Conheça a proposta de cada caderno e confira páginas reais dos materiais incluídos no kit.</p>
         </div>
         <div className="product-grid">
