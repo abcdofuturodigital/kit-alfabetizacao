@@ -161,3 +161,27 @@ footer span{color:#c8d6d2;font-size:11px}
  .hero-tags span{min-height:49px;font-size:14px;padding:10px}
  .hero-tags span:nth-child(2){transform:none}
 }
+
+
+/* Refinos de conversão e seção de dúvidas */
+.hero h1{max-width:610px}
+.hero-subtitle{font-size:17px;line-height:1.65}
+.product-card{display:flex;flex-direction:column}
+.product-card h3{min-height:46px;display:flex;align-items:center;justify-content:center}
+.bonus-art{border-color:#fff8df;background:linear-gradient(150deg,#fff7df 0%,#f6d875 100%);box-shadow:0 16px 30px #102a4c20,10px 14px 0 #174c6820}
+.bonus-art>span{border:2px solid #fff;background:#fffdf3;box-shadow:0 5px 14px #80651b18}
+.faq-section{padding:78px 0 84px;background:#f6f8f2}
+.faq-list{display:grid;gap:12px;width:min(100%,820px);margin:0 auto}
+.faq-list details{padding:0 22px;border:1px solid #dfe8dc;border-radius:12px;background:#fff;box-shadow:0 5px 18px #102a4c08}
+.faq-list summary{position:relative;padding:19px 34px 19px 0;color:var(--navy);font-family:Nunito,sans-serif;font-size:16px;font-weight:900;line-height:1.35;cursor:pointer;list-style:none}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";position:absolute;right:0;top:50%;display:grid;width:25px;height:25px;place-items:center;border-radius:50%;background:#e8f2e5;color:var(--navy);font-size:19px;transform:translateY(-50%)}
+.faq-list details[open] summary:after{content:"−";background:#fff0e8;color:#bd5731}
+.faq-list details p{margin:0;padding:0 30px 19px 0;color:#586b68;font-size:14px;line-height:1.7}
+@media(max-width:480px){
+ .faq-section{padding:58px 0 62px}
+ .faq-list details{padding:0 16px}
+ .faq-list summary{font-size:15px;padding:17px 32px 17px 0}
+ .faq-list details p{font-size:13px;padding-right:5px}
+ .product-card h3{min-height:0}
+}
