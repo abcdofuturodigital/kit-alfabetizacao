@@ -150,3 +150,14 @@ footer span{color:#c8d6d2;font-size:11px}
  .trust-section{padding-top:42px;padding-bottom:42px}
  .final-cta{padding:56px 0}
 }
+
+
+/* Maior destaque para os principais diferenciais do kit no topo */
+.hero-tags{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;width:100%;margin:0 0 27px}
+.hero-tags span{display:flex;min-height:66px;align-items:center;justify-content:center;padding:12px 10px;border:2px solid #9cbea5;border-radius:12px;background:#fff;color:#102a4c;font-size:clamp(12px,1.35vw,15px);font-weight:900;line-height:1.25;text-align:center;box-shadow:0 5px 0 #b7d1b6}
+.hero-tags span:nth-child(2){border-color:#f07845;background:#fff4ed;color:#b84e2c;transform:translateY(-5px);box-shadow:0 6px 0 #f4c2a8}
+@media(max-width:480px){
+ .hero-tags{grid-template-columns:1fr;gap:8px;margin-bottom:22px}
+ .hero-tags span{min-height:49px;font-size:14px;padding:10px}
+ .hero-tags span:nth-child(2){transform:none}
+}
