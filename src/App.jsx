@@ -11,21 +11,21 @@ function BuyButton({ children = 'QUERO MEU KIT ALFABETIZAÇÃO' }) {
 const products = [
   {
     title: 'Caderno de Sílabas Simples',
-    description: 'Atividades para reconhecer, combinar e praticar sílabas simples.',
+    description: 'Propostas para reconhecer, combinar e praticar sílabas simples, apoiando o início da leitura e da escrita.',
     cover: 'capas/caderno-silabas-simples.svg',
     page: previewPages.silabas,
     alt: 'Página real do Caderno de Sílabas Simples.'
   },
   {
     title: 'Caderno das Vogais',
-    description: 'Propostas para identificar, reconhecer e praticar as vogais.',
+    description: 'Atividades para identificar, reconhecer e praticar as vogais por meio de diferentes propostas.',
     cover: 'capas/caderno-das-vogais.svg',
     page: previewPages.vogais,
     alt: 'Página real do Caderno das Vogais.'
   },
   {
     title: 'Caderno de Coordenação Motora',
-    description: '50 páginas de atividades para trabalhar movimentos e controle do traçado.',
+    description: '50 páginas de atividades para desenvolver movimentos, coordenação e controle do traçado.',
     cover: 'capas/caderno-coordenacao-motora.svg',
     page: previewPages.coordenacao,
     alt: 'Página real do Caderno de Coordenação Motora.'
@@ -40,8 +40,8 @@ function App() {
       <header className="hero section-wrap">
         <div className="hero-copy">
           <span className="eyebrow">PARA PROFESSORES, PAIS E REFORÇO ESCOLAR</span>
-          <h1>Mais praticidade para ensinar. <em>Mais atividades para aprender.</em></h1>
-          <p className="hero-subtitle">Tenha em um só kit atividades de vogais, sílabas simples e coordenação motora para apoiar a alfabetização das crianças em casa ou na sala de aula.</p>
+          <h1>Prepare atividades com mais facilidade. <em>Apoie cada etapa da alfabetização.</em></h1>
+          <p className="hero-subtitle">Chega de perder tempo procurando atividades em vários lugares. Reúna propostas de vogais, sílabas simples e coordenação motora em um único kit digital, para usar em casa ou na sala de aula.</p>
           <div className="hero-tags">
             <span>3 cadernos digitais</span>
             <span>+150 atividades</span>
@@ -70,7 +70,7 @@ function App() {
         <div className="section-wrap pain-inner">
           <span className="eyebrow">UMA ROTINA MAIS ORGANIZADA</span>
           <h2>Está procurando atividades para apoiar a alfabetização?</h2>
-          <p>Reunir propostas diferentes, preparar atividades e encontrar materiais adequados pode tomar tempo. O Kit Alfabetização reúne três cadernos digitais em um só lugar para facilitar esse planejamento.</p>
+          <p>Encontrar atividades, organizar a rotina e preparar propostas para diferentes habilidades exige tempo. Com o Kit Alfabetização, você tem três cadernos digitais reunidos em um só lugar para apoiar esse trabalho com mais praticidade.</p>
         </div>
       </section>
 
@@ -78,7 +78,7 @@ function App() {
         <div className="section-heading">
           <span className="eyebrow">CONHEÇA O QUE VOCÊ VAI RECEBER</span>
           <h2>3 cadernos. Diferentes habilidades para trabalhar.</h2>
-          <p>Veja as capas e confira páginas reais dos materiais incluídos no kit.</p>
+          <p>Conheça a proposta de cada caderno e confira páginas reais dos materiais incluídos no kit.</p>
         </div>
         <div className="product-grid">
           {products.map((product) => (
@@ -126,7 +126,7 @@ function App() {
           <div className="bonus-copy">
             <span className="eyebrow">E TEM MAIS</span>
             <h2>Você também recebe um bônus especial!</h2>
-            <p><strong>Livro de Colorir — Animais da Fazenda</strong>, um material digital extra para complementar o kit.</p>
+            <p><strong>Livro de Colorir — Animais da Fazenda</strong>: um material digital extra com desenhos de animais da fazenda para colorir e ampliar as possibilidades de atividade.</p>
           </div>
           <div className="bonus-art" aria-label="Livro de colorir Animais da Fazenda">
             <span aria-hidden="true">🐮 🐷 🐔</span>
@@ -161,6 +161,38 @@ function App() {
         <div><span>01</span><h3>Compra pela Hotmart</h3><p>O pagamento é realizado no ambiente seguro da plataforma.</p></div>
         <div><span>02</span><h3>Produto digital</h3><p>Você recebe as orientações de acesso após a confirmação da compra.</p></div>
         <div><span>03</span><h3>Pronto para imprimir</h3><p>Use os arquivos digitais para preparar suas atividades.</p></div>
+      </section>
+
+      <section className="faq-section">
+        <div className="section-wrap">
+          <div className="section-heading">
+            <span className="eyebrow">AINDA TEM DÚVIDAS?</span>
+            <h2>Informações importantes antes de comprar</h2>
+            <p>Veja como funciona o Kit Alfabetização.</p>
+          </div>
+          <div className="faq-list">
+            <details>
+              <summary>O material é físico ou digital?</summary>
+              <p>O kit é digital. Você recebe os arquivos para acessar e imprimir, não é enviado nenhum produto físico.</p>
+            </details>
+            <details>
+              <summary>Como recebo o material após a compra?</summary>
+              <p>O acesso é disponibilizado digitalmente após a confirmação do pagamento, conforme as orientações enviadas pela Hotmart.</p>
+            </details>
+            <details>
+              <summary>Posso imprimir as atividades?</summary>
+              <p>Sim. Os cadernos são arquivos digitais prontos para imprimir, para que você possa preparar as atividades conforme sua necessidade.</p>
+            </details>
+            <details>
+              <summary>Posso utilizar o material em casa ou na sala de aula?</summary>
+              <p>O kit foi pensado para apoiar atividades de alfabetização em diferentes contextos, como em casa, na sala de aula e no reforço escolar.</p>
+            </details>
+            <details>
+              <summary>Existe mensalidade?</summary>
+              <p>Não. A oferta apresentada é de pagamento único, realizado no ambiente de checkout da Hotmart.</p>
+            </details>
+          </div>
+        </div>
       </section>
 
       <section className="final-cta">
