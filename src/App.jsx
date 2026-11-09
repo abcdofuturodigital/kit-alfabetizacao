@@ -25,7 +25,7 @@ const products = [
   },
   {
     title: 'Caderno de Coordenação Motora',
-    description: '50 páginas de atividades para desenvolver movimentos, coordenação e controle do traçado.',
+    description: '50 páginas de atividades para estimular os movimentos, a coordenação motora e o controle do traçado.',
     cover: 'capas/caderno-coordenacao-motora.svg',
     page: previewPages.coordenacao,
     alt: 'Página real do Caderno de Coordenação Motora.'
