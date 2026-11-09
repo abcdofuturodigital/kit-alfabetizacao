@@ -128,3 +128,6 @@
 .hero-materials{width:100%;max-width:760px;margin-left:auto;margin-right:auto}
 .hero-mix{margin-left:auto;margin-right:auto}
 .hero-cta{margin-left:auto;margin-right:auto}
+
+/* Espaçamento 1,5 entre as linhas do título principal */
+.hero-copy h1{line-height:1.5}
