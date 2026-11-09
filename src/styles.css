@@ -9,6 +9,8 @@ img{max-width:100%}
 .topbar{min-height:42px;padding:12px 18px;background:var(--navy);color:#fff;text-align:center;font-size:11px;font-weight:900;letter-spacing:.12em}
 .topbar span{color:#f4a36d;padding:0 6px}
 .eyebrow{display:inline-block;margin:0 0 15px;color:#376b5c;font-size:11px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+
+.bonus-copy>.eyebrow{margin-bottom:18px;padding:9px 14px;border:1px solid #f2a16f;border-radius:6px;background:#fff0e5;color:#b94e27;font-size:12px;font-weight:900;letter-spacing:.13em;box-shadow:3px 3px 0 #f2a16f55}
 .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:38px;padding-top:64px;padding-bottom:68px}
 .hero-copy{max-width:560px}
 .hero h1,.section-heading h2,.pain-inner h2,.bonus-copy h2,.offer-card h2,.final-cta h2{font-family:Nunito,sans-serif;color:var(--navy);font-weight:900;letter-spacing:-.04em}
