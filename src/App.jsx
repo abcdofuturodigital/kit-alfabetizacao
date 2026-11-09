@@ -124,15 +124,22 @@ function App() {
       <section className="bonus-section">
         <div className="section-wrap bonus-inner">
           <div className="bonus-copy">
-            <span className="eyebrow">E TEM MAIS</span>
-            <h2>Você também recebe um bônus especial!</h2>
-            <p><strong>Livro de Colorir — Animais da Fazenda</strong>: um material digital extra com desenhos de animais da fazenda para colorir e ampliar as possibilidades de atividade.</p>
+            <span className="eyebrow">BÔNUS ESPECIAL DO KIT</span>
+            <h2>Aprender também pode ser divertido!</h2>
+            <p>Além dos três cadernos, você recebe o <strong>Livro de Colorir — Animais da Fazenda</strong>, um material digital com <strong>25 páginas em PDF</strong>, pronto para imprimir e usar em casa ou na sala de aula.</p>
+            <ul className="bonus-features">
+              <li><strong>Modelo colorido:</strong> a criança observa uma referência visual.</li>
+              <li><strong>Desenho para colorir:</strong> uma versão em preto e branco em cada página.</li>
+              <li><strong>Nome do animal:</strong> para pintar, reconhecer e aprender.</li>
+            </ul>
+            <p className="bonus-footnote">Um bônus que une criatividade, estímulo visual e prática da coordenação motora.</p>
           </div>
-          <div className="bonus-art" aria-label="Livro de colorir Animais da Fazenda">
-            <span aria-hidden="true">🐮 🐷 🐔</span>
+          <div className="bonus-art" aria-label="Bônus: Livro de Colorir Animais da Fazenda com 25 páginas">
+            <span className="bonus-animals" aria-hidden="true">🐮 🐷 🐔</span>
             <strong>ANIMAIS DA FAZENDA</strong>
-            <small>LIVRO DE COLORIR</small>
-            <b>BÔNUS</b>
+            <small>LIVRO DE COLORIR • PDF</small>
+            <div className="bonus-page-count"><b>25</b><span>PÁGINAS<br />PARA COLORIR</span></div>
+            <b className="bonus-ribbon">BÔNUS</b>
           </div>
         </div>
       </section>
