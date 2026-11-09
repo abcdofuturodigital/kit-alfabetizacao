@@ -1,55 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1200 1600">
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+<title id="title">Caderno de Coordenação Motora</title>
+<desc id="desc">Capa pedagógica no mesmo padrão visual dos outros cadernos, com caminhos pontilhados, formas geométricas e lápis para representar atividades de coordenação motora.</desc>
 <defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff4e8"/><stop offset="1" stop-color="#e8f7f0"/></linearGradient>
- <linearGradient id="mint" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#bcebd7"/><stop offset="1" stop-color="#83d0b2"/></linearGradient>
- <filter id="shadow" x="-25%" y="-25%" width="150%" height="160%"><feGaussianBlur in="SourceAlpha" stdDeviation="13"/><feOffset dy="14"/><feComponentTransfer><feFuncA type="linear" slope=".17"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#fdfaf1"/><stop offset="1" stop-color="#e6f2ed"/></linearGradient>
+ <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#174c55" flood-opacity=".18"/></filter>
 </defs>
-<rect width="1200" height="1600" fill="url(#bg)"/>
-<circle cx="1050" cy="170" r="125" fill="#f8d879" opacity=".75"/><circle cx="140" cy="950" r="120" fill="#b9e6d3" opacity=".8"/>
-<path d="M0 1050 Q230 900 450 1030 T900 1000 T1200 980 V1600 H0Z" fill="#c9ecdc"/>
-<path d="M0 1200 Q300 1080 600 1190 T1200 1150 V1600 H0Z" fill="#a8dfc7"/>
-<!-- confetti -->
-<g fill="#ef8b73"><circle cx="170" cy="480" r="18"/><circle cx="1020" cy="620" r="16"/><path d="M1000 390l18 42 44 18-44 18-18 42-18-42-44-18 44-18z"/></g>
-<g fill="#70b9df"><circle cx="1040" cy="850" r="19"/><path d="M190 350l14 34 36 14-36 14-14 36-14-36-36-14 36-14z"/></g>
-<!-- heading -->
+<rect width="1200" height="1600" rx="48" fill="url(#bg)"/>
+<circle cx="1060" cy="150" r="190" fill="#d8eee2"/>
+<circle cx="100" cy="1400" r="210" fill="#f8dfaa" opacity=".55"/>
+<path d="M0 0h1200v90H0z" fill="#174c55"/>
+<text x="600" y="58" fill="#fff" font-family="Arial,sans-serif" font-size="28" font-weight="700" letter-spacing="5" text-anchor="middle">ABC DO FUTURO DIGITAL</text>
+<text x="600" y="250" fill="#174c55" font-family="Arial,sans-serif" font-size="76" font-weight="800" text-anchor="middle">CADERNO DE</text>
+<text x="600" y="385" fill="#28758a" font-family="Arial,sans-serif" font-size="92" font-weight="900" text-anchor="middle">COORDENAÇÃO</text>
+<text x="600" y="495" fill="#174c55" font-family="Arial,sans-serif" font-size="112" font-weight="900" text-anchor="middle">MOTORA</text>
+<rect x="150" y="555" width="900" height="90" rx="45" fill="#f4d56c"/>
+<text x="600" y="613" fill="#174c55" font-family="Arial,sans-serif" font-size="34" font-weight="700" text-anchor="middle">MOVIMENTOS • COORDENAÇÃO • TRAÇADO</text>
 <g filter="url(#shadow)">
- <rect x="65" y="60" width="1070" height="380" rx="70" fill="#fff" stroke="#174c55" stroke-width="9"/>
- <rect x="95" y="90" width="1010" height="320" rx="48" fill="none" stroke="#b7dfcf" stroke-width="5" stroke-dasharray="14 16"/>
- <text x="600" y="195" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="70" font-weight="800" fill="#174c55">CADERNO DE</text>
- <text x="600" y="345" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="118" font-weight="900" letter-spacing="1" fill="#ed8067">COORDENAÇÃO</text>
- <text x="600" y="420" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="72" font-weight="900" fill="#369c79">MOTORA</text>
+ <rect x="145" y="720" width="910" height="465" rx="34" fill="#fff" stroke="#d8e7df" stroke-width="5"/>
+ <text x="600" y="805" fill="#174c55" font-family="Arial,sans-serif" font-size="39" font-weight="800" text-anchor="middle">VAMOS PRATICAR?</text>
+ <path d="M260 900 H940" fill="none" stroke="#f27c68" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 27"/>
+ <path d="M260 990 Q380 875 500 990 T740 990 T980 990" fill="none" stroke="#28758a" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 27"/>
+ <path d="M260 1090 L360 1015 L460 1090 L560 1015 L660 1090 L760 1015 L860 1090" fill="none" stroke="#80aa91" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 27"/>
 </g>
-<!-- workbook sheet -->
 <g filter="url(#shadow)">
- <rect x="120" y="535" width="960" height="680" rx="48" fill="#fff" stroke="#174c55" stroke-width="9"/>
- <rect x="155" y="570" width="890" height="610" rx="30" fill="#fbfdfb" stroke="#d6e9df" stroke-width="5"/>
- <text x="600" y="650" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="37" font-weight="800" fill="#174c55">VAMOS TREINAR OS TRAÇADOS!</text>
- <!-- dotted paths -->
- <path d="M240 770 H960" fill="none" stroke="#f08a72" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 28"/>
- <path d="M240 900 Q390 760 540 900 T840 900" fill="none" stroke="#60b8dc" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 28"/>
- <path d="M240 1060 L350 960 L460 1060 L570 960 L680 1060 L790 960 L900 1060" fill="none" stroke="#7cc69d" stroke-width="12" stroke-linecap="round" stroke-dasharray="2 28"/>
- <!-- shapes to trace -->
- <circle cx="310" cy="1130" r="35" fill="none" stroke="#f1b84d" stroke-width="9" stroke-dasharray="7 9"/>
- <rect x="550" y="1095" width="70" height="70" rx="8" fill="none" stroke="#9a80c7" stroke-width="9" stroke-dasharray="7 9"/>
- <path d="M850 1168l42-74 42 74z" fill="none" stroke="#ed8067" stroke-width="9" stroke-dasharray="7 9"/>
+ <rect x="205" y="1230" width="170" height="150" rx="25" fill="#f27c68"/>
+ <circle cx="290" cy="1305" r="42" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="7 8"/>
+ <rect x="515" y="1230" width="170" height="150" rx="25" fill="#28758a"/>
+ <rect x="565" y="1280" width="70" height="70" rx="7" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="7 8"/>
+ <rect x="825" y="1230" width="170" height="150" rx="25" fill="#80aa91"/>
+ <path d="M910 1270l45 80h-90z" fill="none" stroke="#fff" stroke-width="10" stroke-linejoin="round" stroke-dasharray="7 8"/>
 </g>
-<!-- oversized pencil -->
-<g transform="translate(790 1260) rotate(-35)" filter="url(#shadow)">
- <rect x="0" y="0" width="95" height="250" rx="18" fill="#f5c64e" stroke="#986d28" stroke-width="8"/>
- <path d="M0 0 Q47 -65 95 0" fill="#ed8067" stroke="#986d28" stroke-width="8"/>
- <path d="M0 250 L47 325 L95 250Z" fill="#e8c49b" stroke="#986d28" stroke-width="8"/>
- <path d="M35 300 L47 325 L60 300Z" fill="#343b3d"/>
- <path d="M0 55H95 M0 195H95" stroke="#fff1c2" stroke-width="12"/>
-</g>
-<!-- little handprint-like decorative movement motif -->
-<g transform="translate(180 1280) rotate(-12)" fill="#f08a72">
- <circle cx="35" cy="0" r="24"/><circle cx="92" cy="-25" r="23"/><circle cx="145" cy="-20" r="22"/><circle cx="195" cy="5" r="21"/>
- <path d="M25 40 Q105 5 190 48 Q220 90 175 140 Q105 185 45 140 Q0 105 25 40Z"/>
-</g>
-<!-- subtitle -->
-<g filter="url(#shadow)">
- <rect x="65" y="1430" width="1070" height="120" rx="38" fill="#174c55"/>
- <text x="600" y="1505" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="39" font-weight="800" fill="#fff">Atividades para desenvolver o controle dos</text>
- <text x="600" y="1550" text-anchor="middle" font-family="Trebuchet MS,Arial,sans-serif" font-size="39" font-weight="800" fill="#fff">movimentos e o traçado.</text>
-</g>
+<text x="600" y="1450" fill="#174c55" font-family="Arial,sans-serif" font-size="38" font-weight="700" text-anchor="middle">ATIVIDADES DE COORDENAÇÃO MOTORA</text>
+<text x="600" y="1510" fill="#687477" font-family="Arial,sans-serif" font-size="30" text-anchor="middle">Material digital • Pronto para imprimir</text>
+<path d="M0 1540h1200v60H0z" fill="#174c55"/>
+<text x="600" y="1580" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="3" text-anchor="middle">50 PÁGINAS DE ATIVIDADES</text>
 </svg>
