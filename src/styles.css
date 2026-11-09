@@ -114,3 +114,9 @@
 .preview-card img{width:100%;max-height:470px;object-fit:contain}
 @media(max-width:800px){.hero-mix{height:340px}.mix-page{width:min(32%,165px)}}
 @media(max-width:480px){.hero-mix{height:270px}.mix-page{width:min(34%,125px);border-width:5px}.preview-card{flex-basis:210px;max-width:210px}.preview-carousel{padding-left:15px;padding-right:15px}}
+
+
+/* Nomes dos três cadernos em destaque logo abaixo do título principal */
+.hero-materials{display:flex;flex-direction:column;align-items:center;gap:9px;margin:20px auto 0;color:#102a4c;font-family:Nunito,sans-serif;font-size:clamp(13px,1.7vw,17px);font-weight:900;letter-spacing:.035em;line-height:1.35;text-align:center}
+.hero-materials span{display:block}
+@media(max-width:480px){.hero-materials{font-size:13px;gap:8px;margin-top:16px}}
