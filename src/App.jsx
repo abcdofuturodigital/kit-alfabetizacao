@@ -15,6 +15,11 @@ function App() {
       <header className="hero section-wrap">
         <div className="hero-copy">
           <h1><em>+150 ATIVIDADES</em><br />PARA ALFABETIZAR!</h1>
+          <div className="hero-materials" aria-label="Materiais incluídos no kit">
+            <span>CADERNO DE SÍLABAS SIMPLES</span>
+            <span>CADERNO DAS VOGAIS</span>
+            <span>CADERNO DE COORDENAÇÃO MOTORA</span>
+          </div>
         </div>
         <div className="hero-mix" aria-label="Prévia de páginas reais dos três cadernos">
           <img className="mix-page mix-silabas" src={previewPages.silabas} alt="Atividade real de sílabas simples."/>
