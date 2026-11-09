@@ -120,3 +120,11 @@
 .hero-materials{display:flex;flex-direction:column;align-items:center;gap:9px;margin:20px auto 0;color:#102a4c;font-family:Nunito,sans-serif;font-size:clamp(13px,1.7vw,17px);font-weight:900;letter-spacing:.035em;line-height:1.35;text-align:center}
 .hero-materials span{display:block}
 @media(max-width:480px){.hero-materials{font-size:13px;gap:8px;margin-top:16px}}
+
+
+/* Correção de alinhamento da primeira seção */
+.hero-copy{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero-copy h1{width:100%;max-width:760px;margin:0 auto 20px;text-align:center}
+.hero-materials{width:100%;max-width:760px;margin-left:auto;margin-right:auto}
+.hero-mix{margin-left:auto;margin-right:auto}
+.hero-cta{margin-left:auto;margin-right:auto}
