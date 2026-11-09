@@ -131,3 +131,46 @@
 
 /* Espaçamento 1,5 entre as linhas do título principal */
 .hero-copy h1{line-height:1.5}
+
+
+/* Mockup principal em camadas: capas 3D e páginas reais dos materiais */
+.hero-mockup{position:relative;isolation:isolate;width:min(100%,760px);height:455px;margin:0 auto 8px;display:flex;align-items:center;justify-content:center}
+.hero-mockup:before{content:"";position:absolute;inset:7% 5% 5%;z-index:-2;border-radius:42px;background:radial-gradient(ellipse at 50% 52%,#ffffff 0%,#edf5e9 58%,#d5ead1 100%);box-shadow:inset 0 0 0 1px #ffffffb0}
+.mockup-pages{position:absolute;inset:0;z-index:-1}
+.mockup-page{position:absolute;display:block;width:clamp(112px,17vw,178px);height:auto;max-height:310px;object-fit:contain;padding:5px;background:#fff;border:1px solid #e7e5df;border-radius:4px;box-shadow:0 15px 28px #1b34402b}
+.mockup-page-silabas{left:7%;top:22%;transform:rotate(-13deg)}
+.mockup-page-vogais{left:31%;top:5%;transform:rotate(-3deg)}
+.mockup-page-coordenacao{right:8%;top:19%;transform:rotate(12deg)}
+.mockup-books{position:absolute;left:50%;top:50%;width:76%;height:76%;transform:translate(-50%,-43%);display:flex;align-items:center;justify-content:center}
+.mockup-book{position:relative;display:block;width:clamp(145px,20vw,205px);height:auto;max-height:335px;object-fit:contain;filter:drop-shadow(0 17px 15px #142e3545)}
+.mockup-book-silabas{transform:rotate(-9deg) translate(20px,18px);z-index:1}
+.mockup-book-vogais{transform:translateY(-12px);z-index:3}
+.mockup-book-coordenacao{transform:rotate(9deg) translate(-20px,18px);z-index:2}
+.mockup-bonus{position:absolute;right:2%;bottom:3%;width:142px;min-height:148px;padding:13px 10px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;text-align:center;color:#173b45;background:linear-gradient(145deg,#fff5cb,#f2d875);border:5px solid #fff;border-radius:8px 13px 13px 8px;box-shadow:7px 10px 20px #243b352c;transform:rotate(7deg);z-index:5}
+.mockup-bonus-art{font-size:25px;line-height:1.4;background:#fff9e7;border-radius:50%;padding:8px}
+.mockup-bonus strong{font-family:Nunito,sans-serif;font-size:13px;font-weight:1000;letter-spacing:.12em}
+.mockup-bonus>span:not(.mockup-bonus-art){font-size:10px;font-weight:900;line-height:1.2}
+.mockup-bonus small{font-size:8px;font-weight:800;letter-spacing:.1em}
+@media(max-width:800px){
+ .hero-mockup{height:410px;width:min(100%,620px)}
+ .mockup-book{width:clamp(125px,25vw,180px);max-height:285px}
+ .mockup-page{width:clamp(100px,20vw,150px);max-height:260px}
+ .mockup-bonus{right:0;bottom:1%;width:122px;min-height:130px}
+}
+@media(max-width:480px){
+ .hero-mockup{height:315px;margin-top:2px}
+ .hero-mockup:before{inset:8% 1% 5%;border-radius:25px}
+ .mockup-books{width:86%;height:72%;top:48%}
+ .mockup-book{width:clamp(91px,28vw,122px);max-height:205px}
+ .mockup-book-silabas{transform:rotate(-8deg) translate(12px,13px)}
+ .mockup-book-coordenacao{transform:rotate(8deg) translate(-12px,13px)}
+ .mockup-page{width:clamp(76px,23vw,104px);max-height:180px;padding:3px}
+ .mockup-page-silabas{left:1%;top:25%}
+ .mockup-page-vogais{left:31%;top:4%}
+ .mockup-page-coordenacao{right:1%;top:24%}
+ .mockup-bonus{right:0;bottom:0;width:94px;min-height:102px;padding:7px 5px;border-width:3px;gap:3px}
+ .mockup-bonus-art{font-size:17px;padding:5px}
+ .mockup-bonus strong{font-size:10px}
+ .mockup-bonus>span:not(.mockup-bonus-art){font-size:7px}
+ .mockup-bonus small{font-size:6px}
+}
