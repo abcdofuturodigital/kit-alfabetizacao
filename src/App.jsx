@@ -66,14 +66,6 @@ function App() {
         </div>
       </header>
 
-      <section className="pain-section">
-        <div className="section-wrap pain-inner">
-          <span className="eyebrow">UMA ROTINA MAIS ORGANIZADA</span>
-          <h2>Está procurando atividades para apoiar a alfabetização?</h2>
-          <p>Encontrar atividades, organizar a rotina e preparar propostas para diferentes habilidades exige tempo. Com o Kit Alfabetização, você tem três cadernos digitais reunidos em um só lugar para apoiar esse trabalho com mais praticidade.</p>
-        </div>
-      </section>
-
       <section className="section-wrap products-section">
         <div className="section-heading">
           <span className="eyebrow">CONHEÇA O QUE VOCÊ VAI RECEBER</span>
