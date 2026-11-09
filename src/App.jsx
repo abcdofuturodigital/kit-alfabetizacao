@@ -101,17 +101,7 @@ function App() {
         </div>
       </section>
 
-      <section className="section-wrap audience-section">
-        <div className="section-heading">
-          <span className="eyebrow">FEITO PARA ACOMPANHAR SUA ROTINA</span>
-          <h2>Para usar em diferentes momentos de aprendizagem</h2>
-        </div>
-        <div className="audience-grid">
-          <article><span className="audience-icon">01</span><h3>Professores</h3><p>Tenha atividades de apoio para complementar suas propostas em sala de aula.</p></article>
-          <article><span className="audience-icon">02</span><h3>Pais e responsáveis</h3><p>Conte com materiais para propor momentos de aprendizagem e prática em casa.</p></article>
-          <article><span className="audience-icon">03</span><h3>Reforço escolar</h3><p>Reúna atividades variadas para apoiar o acompanhamento das crianças.</p></article>
-        </div>
-      </section>
+      
 
       <section className="bonus-section">
         <div className="section-wrap bonus-inner">
