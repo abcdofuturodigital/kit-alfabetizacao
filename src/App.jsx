@@ -85,10 +85,9 @@ function App() {
 
       <section className="preview-section">
         <div className="section-wrap">
-          <div className="section-heading">
-            <span className="eyebrow">MATERIAIS REAIS</span>
-            <h2>Olhe por dentro antes de comprar</h2>
-            <p>Estas são páginas dos próprios cadernos que fazem parte do kit.</p>
+          <div className="preview-banner">
+            <span>VEJA POR DENTRO DO MATERIAL</span>
+            <strong>PÁGINAS REAIS DOS CADERNOS</strong>
           </div>
           <div className="preview-grid">
             {products.map((product) => (
