@@ -21,10 +21,23 @@ function App() {
             <span>CADERNO DE COORDENAÇÃO MOTORA</span>
           </div>
         </div>
-        <div className="hero-mix" aria-label="Prévia de páginas reais dos três cadernos">
-          <img className="mix-page mix-silabas" src={previewPages.silabas} alt="Atividade real de sílabas simples."/>
-          <img className="mix-page mix-vogais" src={previewPages.vogais} alt="Atividade real com vogais."/>
-          <img className="mix-page mix-coordenacao" src={previewPages.coordenacao} alt="Atividade real de coordenação motora."/>
+        <div className="hero-mockup" aria-label="Mockup dos três cadernos do Kit Alfabetização e do livro bônus">
+          <div className="mockup-pages">
+            <img className="mockup-page mockup-page-silabas" src={previewPages.silabas} alt="Página real do Caderno de Sílabas Simples."/>
+            <img className="mockup-page mockup-page-vogais" src={previewPages.vogais} alt="Página real do Caderno das Vogais."/>
+            <img className="mockup-page mockup-page-coordenacao" src={previewPages.coordenacao} alt="Página real do Caderno de Coordenação Motora."/>
+          </div>
+          <div className="mockup-books">
+            <img className="mockup-book mockup-book-silabas" src={`${import.meta.env.BASE_URL}capas/caderno-silabas-simples.svg`} alt="Capa do Caderno de Sílabas Simples."/>
+            <img className="mockup-book mockup-book-vogais" src={`${import.meta.env.BASE_URL}capas/caderno-das-vogais.svg`} alt="Capa do Caderno das Vogais."/>
+            <img className="mockup-book mockup-book-coordenacao" src={`${import.meta.env.BASE_URL}capas/caderno-coordenacao-motora.svg`} alt="Capa do Caderno de Coordenação Motora."/>
+          </div>
+          <div className="mockup-bonus">
+            <span className="mockup-bonus-art" aria-hidden="true">🐮 🐷 🐔</span>
+            <strong>BÔNUS</strong>
+            <span>ANIMAIS DA FAZENDA</span>
+            <small>LIVRO DE COLORIR</small>
+          </div>
         </div>
         <div className="hero-cta">
           <BuyButton />
