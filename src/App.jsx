@@ -41,7 +41,7 @@ function App() {
         <div className="hero-copy">
           <span className="eyebrow">PARA PROFESSORES, PAIS E REFORÇO ESCOLAR</span>
           <h1>Prepare atividades com mais facilidade. <em>Apoie cada etapa da alfabetização.</em></h1>
-          <p className="hero-subtitle">Chega de perder tempo procurando atividades em vários lugares. Reúna propostas de vogais, sílabas simples e coordenação motora em um único kit digital, para usar em casa ou na sala de aula.</p>
+          <p className="hero-subtitle">Chega de perder tempo procurando atividades em diferentes lugares! Tenha em um só kit digital propostas de vogais, sílabas simples e coordenação motora. É só imprimir e aplicar!</p>
           <div className="hero-tags">
             <span>3 cadernos digitais</span>
             <span>+150 atividades</span>
