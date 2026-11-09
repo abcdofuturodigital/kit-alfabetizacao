@@ -35,7 +35,7 @@ const products = [
 function App() {
   return (
     <main>
-      <div className="topbar">KIT ALFABETIZAÇÃO <span>•</span> MATERIAL DIGITAL PARA APOIAR A APRENDIZAGEM</div>
+      <div className="topbar">ACESSO IMEDIATO <span>•</span> PAGAMENTO ÚNICO <span>•</span> 7 DIAS DE GARANTIA</div>
 
       <header className="hero section-wrap">
         <div className="hero-copy">
