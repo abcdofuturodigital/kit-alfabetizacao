@@ -137,8 +137,8 @@ function App() {
           </ul>
           <div className="price-area">
             <span className="old-price">Valor dos materiais separados: <s>R$ 49,70</s></span>
-            <div className="price">R$ 34,90</div>
-            <strong className="saving">Você economiza R$ 14,80</strong>
+            <div className="price">R$ 29,90</div>
+            <strong className="saving">Você economiza R$ 19,80</strong>
           </div>
           <BuyButton />
           <small className="offer-note">Pagamento único • Checkout seguro pela Hotmart • Produto digital</small>
