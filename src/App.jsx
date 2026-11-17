@@ -4,9 +4,9 @@ import { previewPages } from './previewPages';
 const checkoutUrl = 'https://pay.hotmart.com/G108080766B?checkoutMode=10&bid=1792293294853';
 const asset = (path) => import.meta.env.BASE_URL + path;
 
-function BuyButton({ children = 'QUERO GARANTIR MEU KIT' }) {
+function BuyButton({ children = 'QUERO COMPRAR MEU KIT', className = '' }) {
   return (
-    <a className="buy-button" href={checkoutUrl} target="_blank" rel="noreferrer">
+    <a className={['buy-button', className].filter(Boolean).join(' ')} href={checkoutUrl} target="_blank" rel="noreferrer">
       {children}<span aria-hidden="true"> →</span>
     </a>
   );
@@ -16,19 +16,19 @@ const products = [
   {
     number: '01',
     title: 'Caderno de Sílabas Simples',
-    description: 'Atividades para reconhecer, combinar e praticar sílabas simples, apoiando o início da leitura e da escrita.',
+    description: 'Atividades para reconhecer, formar e praticar sílabas simples, apoiando o início da leitura e da escrita.',
     cover: 'capas/caderno-silabas-simples.svg'
   },
   {
     number: '02',
     title: 'Caderno das Vogais',
-    description: 'Propostas para identificar, reconhecer, traçar e praticar as vogais de diferentes maneiras.',
+    description: 'Atividades para identificar, reconhecer, traçar e praticar as vogais de diferentes maneiras.',
     cover: 'capas/caderno-das-vogais.svg'
   },
   {
     number: '03',
     title: 'Caderno de Coordenação Motora',
-    description: '50 páginas de atividades para estimular os movimentos, a coordenação motora e o controle do traçado.',
+    description: '50 páginas para estimular os movimentos, a coordenação motora e o controle do traçado.',
     cover: 'capas/caderno-coordenacao-motora.svg'
   }
 ];
@@ -36,19 +36,19 @@ const products = [
 const slides = [
   {
     title: 'Caderno de Sílabas Simples',
-    description: 'Uma amostra das atividades para trabalhar a leitura e a formação de palavras.',
+    description: 'Veja uma amostra das atividades para trabalhar a leitura e a formação de palavras.',
     image: previewPages.silabas,
     alt: 'Prévia de uma atividade do Caderno de Sílabas Simples.'
   },
   {
     title: 'Caderno das Vogais',
-    description: 'Uma amostra das atividades para identificar e praticar as vogais.',
+    description: 'Veja uma amostra das atividades para identificar e praticar as vogais.',
     image: previewPages.vogais,
     alt: 'Prévia de uma atividade do Caderno das Vogais.'
   },
   {
     title: 'Caderno de Coordenação Motora',
-    description: 'Uma amostra das atividades para praticar traçados e movimentos.',
+    description: 'Veja uma amostra das atividades para praticar traçados e movimentos.',
     image: previewPages.coordenacao,
     alt: 'Prévia de uma atividade do Caderno de Coordenação Motora.'
   }
@@ -57,7 +57,6 @@ const slides = [
 function App() {
   const [activeSlide, setActiveSlide] = useState(0);
   const currentSlide = slides[activeSlide];
-
   const showPrevious = () => setActiveSlide((index) => (index - 1 + slides.length) % slides.length);
   const showNext = () => setActiveSlide((index) => (index + 1) % slides.length);
 
@@ -70,30 +69,35 @@ function App() {
             <span>ABC DO FUTURO DIGITAL</span>
           </a>
           <nav className="main-nav" aria-label="Navegação principal">
-            <a href="#receba">O que você recebe</a>
-            <a href="#previas">Páginas reais</a>
-            <a href="#oferta">Oferta</a>
+            <a href="#receba">O que vem no kit</a>
+            <a href="#previas">Veja as páginas</a>
             <a href="#duvidas">Dúvidas</a>
           </nav>
+          <BuyButton className="header-buy">COMPRAR POR R$ 29,90</BuyButton>
         </div>
       </header>
 
       <section className="hero" id="inicio">
         <div className="hero-inner section-wrap">
           <div className="hero-copy">
-            <span className="eyebrow">PARA PROFESSORES, PAIS E REFORÇO ESCOLAR</span>
-            <h1>Mais praticidade para <em>alfabetizar.</em></h1>
+            <span className="eyebrow">KIT DIGITAL DE ATIVIDADES PARA ALFABETIZAÇÃO</span>
+            <h1>Atividades prontas para <em>alfabetizar</em> sem começar do zero.</h1>
             <p className="hero-subtitle">
-              Um kit digital com atividades de vogais, sílabas simples e coordenação motora,
-              pronto para imprimir e usar na rotina de aprendizagem.
+              Trabalhe vogais, sílabas simples e coordenação motora com três cadernos digitais
+              e um livro de colorir bônus. É só acessar, imprimir e utilizar.
             </p>
             <div className="hero-points">
-              <span><b aria-hidden="true">✓</b> 3 cadernos digitais</span>
-              <span><b aria-hidden="true">✓</b> Arquivos em PDF</span>
+              <span><b aria-hidden="true">✓</b> 3 cadernos em PDF</span>
               <span><b aria-hidden="true">✓</b> Livro de colorir bônus</span>
+              <span><b aria-hidden="true">✓</b> Pronto para imprimir</span>
             </div>
-            <BuyButton>CONHECER O KIT</BuyButton>
-            <small className="hero-note">Pagamento único • Acesso digital após a confirmação pela Hotmart</small>
+            <div className="hero-price">
+              <span>Kit completo por</span>
+              <strong>R$ 29,90</strong>
+              <small>Pagamento único</small>
+            </div>
+            <BuyButton>QUERO GARANTIR MEU KIT</BuyButton>
+            <small className="hero-note">Compra realizada com segurança no checkout da Hotmart.</small>
           </div>
           <div className="hero-visual">
             <img
@@ -102,8 +106,8 @@ function App() {
               alt="Um menino e uma menina sentados à mesa, cobrindo as vogais A e E em folhas de atividades."
             />
             <div className="hero-caption">
-              <span>Aprender praticando</span>
-              <strong>Um passo de cada vez.</strong>
+              <span>Material digital</span>
+              <strong>Para usar em casa ou na sala de aula</strong>
             </div>
           </div>
         </div>
@@ -111,9 +115,9 @@ function App() {
 
       <section className="receive-section section-wrap" id="receba">
         <div className="section-heading">
-          <span className="eyebrow">CONHEÇA O CONTEÚDO DO KIT</span>
+          <span className="eyebrow">TUDO O QUE ESTÁ INCLUÍDO</span>
           <h2>O que você vai receber</h2>
-          <p>Três cadernos digitais e um livro de colorir como bônus, organizados para apoiar diferentes habilidades.</p>
+          <p>Três cadernos de atividades e um livro de colorir bônus em uma única compra.</p>
         </div>
         <div className="product-grid">
           {products.map((product) => (
@@ -124,14 +128,14 @@ function App() {
               </div>
               <h3>{product.title}</h3>
               <p>{product.description}</p>
-              <span className="product-format">PDF • PRONTO PARA IMPRIMIR</span>
+              <span className="product-format">ARQUIVO PDF • PRONTO PARA IMPRIMIR</span>
             </article>
           ))}
         </div>
         <article className="bonus-card">
           <div className="bonus-icon" aria-hidden="true">★</div>
           <div className="bonus-card-copy">
-            <span className="bonus-label">BÔNUS INCLUSO</span>
+            <span className="bonus-label">VOCÊ TAMBÉM RECEBE DE BÔNUS</span>
             <h3>Livro de Colorir — Animais da Fazenda</h3>
             <p>25 páginas em PDF com modelos coloridos e desenhos para pintar.</p>
           </div>
@@ -142,9 +146,9 @@ function App() {
       <section className="preview-section" id="previas">
         <div className="section-wrap">
           <div className="section-heading">
-            <span className="eyebrow">CONFIRA ANTES DE COMPRAR</span>
-            <h2>Veja algumas páginas dos cadernos</h2>
-            <p>Use as setas para conhecer uma amostra de cada material.</p>
+            <span className="eyebrow">CONFIRA O CONTEÚDO ANTES DE COMPRAR</span>
+            <h2>Veja por dentro dos cadernos</h2>
+            <p>Use as setas para visualizar uma página de cada material.</p>
           </div>
           <div className="carousel">
             <button className="carousel-arrow" type="button" onClick={showPrevious} aria-label="Ver página anterior">‹</button>
@@ -156,6 +160,7 @@ function App() {
                 <span className="carousel-count">{String(activeSlide + 1).padStart(2, '0')} / {String(slides.length).padStart(2, '0')}</span>
                 <h3>{currentSlide.title}</h3>
                 <p>{currentSlide.description}</p>
+                <BuyButton>QUERO RECEBER OS CADERNOS</BuyButton>
               </div>
             </div>
             <button className="carousel-arrow" type="button" onClick={showNext} aria-label="Ver próxima página">›</button>
@@ -178,24 +183,24 @@ function App() {
       <section className="offer-section" id="oferta">
         <div className="offer-card section-wrap">
           <div className="offer-heading">
-            <span className="eyebrow">UMA OFERTA PARA TER TUDO EM UM SÓ LUGAR</span>
-            <h2>Leve o Kit Alfabetização completo</h2>
-            <p>Receba os três cadernos digitais e o livro de colorir bônus em uma única compra.</p>
+            <span className="eyebrow">GARANTA O SEU KIT</span>
+            <h2>Os 3 cadernos + o livro bônus por R$ 29,90</h2>
+            <p>Uma única compra para receber todos os materiais digitais descritos nesta página.</p>
           </div>
           <div className="offer-content">
             <ul className="offer-list">
               <li><span>✓</span> Caderno de Sílabas Simples</li>
               <li><span>✓</span> Caderno das Vogais</li>
-              <li><span>✓</span> Caderno de Coordenação Motora</li>
-              <li><span>✓</span> Livro de Colorir — Animais da Fazenda (bônus)</li>
+              <li><span>✓</span> Caderno de Coordenação Motora — 50 páginas</li>
+              <li><span>✓</span> Livro de Colorir — Animais da Fazenda — 25 páginas (bônus)</li>
             </ul>
             <div className="price-panel">
               <span className="old-price">Valor dos materiais separados: <s>R$ 49,70</s></span>
-              <span className="price-label">Por apenas</span>
+              <span className="price-label">Você paga uma única vez</span>
               <strong className="price">R$ 29,90</strong>
-              <span className="saving">Você economiza R$ 19,80</span>
-              <BuyButton>QUERO GARANTIR MEU KIT</BuyButton>
-              <small>Pagamento único • Checkout seguro pela Hotmart</small>
+              <span className="saving">Economize R$ 19,80</span>
+              <BuyButton>COMPRAR MEU KIT AGORA</BuyButton>
+              <small>Pagamento único • Checkout seguro pela Hotmart • Produto digital</small>
             </div>
           </div>
         </div>
@@ -204,9 +209,9 @@ function App() {
       <section className="faq-section" id="duvidas">
         <div className="section-wrap">
           <div className="section-heading">
-            <span className="eyebrow">ANTES DE FINALIZAR SUA COMPRA</span>
+            <span className="eyebrow">COMPRE COM TRANQUILIDADE</span>
             <h2>Perguntas frequentes</h2>
-            <p>Confira as informações importantes sobre o Kit Alfabetização.</p>
+            <p>Veja as respostas antes de finalizar sua compra.</p>
           </div>
           <div className="faq-list">
             <details>
@@ -222,8 +227,8 @@ function App() {
               <p>Sim. Os cadernos são arquivos PDF prontos para imprimir e utilizar conforme a sua necessidade.</p>
             </details>
             <details>
-              <summary>Para qual faixa de aprendizagem o kit é indicado?</summary>
-              <p>O material foi pensado para crianças em fase de alfabetização, podendo apoiar atividades na Educação Infantil, no 1º e no 2º ano, além do reforço escolar.</p>
+              <summary>Para quem o kit é indicado?</summary>
+              <p>O kit foi pensado para apoiar crianças em fase de alfabetização, em atividades feitas em casa, na sala de aula ou no reforço escolar.</p>
             </details>
             <details>
               <summary>Existe mensalidade?</summary>
@@ -231,12 +236,12 @@ function App() {
             </details>
             <details>
               <summary>Tenho garantia?</summary>
-              <p>A página informa 7 dias de garantia. Consulte também as condições apresentadas no checkout da Hotmart no momento da compra.</p>
+              <p>A oferta informa 7 dias de garantia. Confira as condições apresentadas no checkout da Hotmart no momento da compra.</p>
             </details>
           </div>
           <div className="faq-cta">
-            <p>Pronto para conhecer os materiais?</p>
-            <BuyButton>VER O KIT COMPLETO</BuyButton>
+            <p>Pronto para receber seus materiais?</p>
+            <BuyButton>SIM, QUERO MEU KIT POR R$ 29,90</BuyButton>
           </div>
         </div>
       </section>
